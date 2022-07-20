@@ -1,16 +1,32 @@
-html {
+html{
     height: 100%;
     width: 100%;
+    margin: 0;
+   
 }
 
 body {
     min-height: 100%;
     min-width: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
 }
 
 .container {
     min-height: 100%;
     min-width: 100%;
+    
+  
+}
+
+
+
+header{
+    background-color: rosybrown;
+}
+
+footer{
+    background-color: rosybrown;
 }
 
 #logo {
@@ -20,10 +36,28 @@ body {
 }
 
 .hotel-images img {
-    height: 500px;
-    width: 500 px;
+     height: 500px;
+    width: 500px;
+ 
 }
 
+.hotel-images{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    align-content: center;
+    margin:2% auto;
+}
+#customer-info{
+    margin: 2%;
+}
+#pay-detail{
+    border: 1px solid black;
+    margin: 2%;
+    border-radius: 5px;
+    padding:1% 2%;
+
+}
 #footer-logo-div img {
     height: 20px;
     width: 22px;

@@ -1,16 +1,27 @@
 html {
     height: 100%;
     width: 100%;
+    margin: 0;
+
 }
 
 body {
     min-height: 100%;
     min-width: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
 }
 
 .container {
     min-height: 100%;
     min-width: 100%;
+
+
+}
+
+
+header {
+    background-color: rosybrown;
 }
 
 #logo {
@@ -19,11 +30,26 @@ body {
     border-radius: 50%;
 }
 
+.hotel-images {
+    margin: 2%;
+    width: 40%;
+    background-color: rgb(132, 136, 139);
+}
+
 .hotel-images img {
     height: 150px;
     width: 150px;
+
 }
 
+#nav-links {
+    margin: 2%;
+}
+
+
+footer {
+    background-color: rosybrown;
+}
 
 #footer-logo-div img {
     height: 20px;
