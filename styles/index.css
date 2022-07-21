@@ -1,37 +1,85 @@
-html {
+html ,body{
     height: 100%;
     width: 100%;
     margin: 0;
 }
 
 body {
-    min-height: 100%;
-    min-width: 100%;
-    margin: 0;
+ 
     background-color: #e0e0e0;
+    
 }
-
-.container {
-    min-height: 100%;
-    min-width: 100%;
+a{
+    text-decoration: none;
+    color: black;
 }
-
+.container{
+    height: 100%;
+    display:grid;
+    justify-content: center;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 60px auto 60px;
+    overflow: scroll;
+   
+}
 header {
+    top: 0;
     background-color: rosybrown;
+   position: fixed;
+   width: 99%;
+    grid-column-start:span 3;
 }
 
+#login-link{
+   float: right;
+   padding: 1%;
+   
+}
 #logo {
     height: 60px;
     width: 60px;
     border-radius: 50%;
 }
 
+
+
+/*content css */
+section{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+#search-bar-div {
+
+   justify-content: center;
+  align-items: center;
+  background-color:  #f1f1f1;
+  align-content: center;
+  text-align: center;
+ 
+} 
+#search-bar-div input{
+
+margin-top: 10%;
+border: 1px transparent;
+padding: 10px;
+font-size: 16px;
+border-radius: 12px;
+width:25%;
+}
+
+#content-viewmore-div {
+   justify-content: center;
+    text-align: center;
+}
+
 #content-images-div {
 
     margin-left: 15%;
     margin-right: 15%;
-
-
 }
 
 #content-images-div img {
@@ -39,22 +87,51 @@ header {
     border-radius: 25%;
     height: 150px;
     width: 150px;
-
 }
 
 #search-bar-div {
     background: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
     height: 380px;
     background-size: cover;
-
     background-position: center;
 }
 
+
+
+/* footer css */
+
+footer{
+    position: fixed;
+    width: 99%;
+     grid-column-start:span 3;
+       bottom: 0;
+    background-color: rosybrown;
+    }
 #footer-logo-div img {
     height: 20px;
     width: 22px;
+   
+    
+  
+}
+#footer-logo-div {
+    float: right;
+    padding: 1%;
+    order: 3;
+  
+}
+#contact-us-div a{
+    order: 1;
+    padding: 1%;
+    float: left;
+  
 }
 
-footer {
-    background-color: rosybrown;
-}
+ #footer-div{
+    font-size: 10px;
+    text-align: center;
+     text-decoration: none;
+      color: black;
+      order:2;
+   }
+   
