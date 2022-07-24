@@ -14,82 +14,105 @@
 <body>
     <div class="container">
         <header>
-            
+
+            <div class="logo">
                 <a href="./index.html"> <img src="./assests/images/logo.png" alt="logo" id="logo"></a>
-                <a  id="login-link" href="./login.html">Login</a>
-         
+            </div>
+
+            <div class="login-link">
+                <a id="login-link" href="./login.html">Login</a>
+            </div>
+
+
         </header>
         <section>
-            <div class="content">
+
+            <div class="box">
                 <div id="content-images">
                     <a href="./detail.html"><img
                             src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></a>
                 </div>
                 <div id="content-form">
-                    <div>
-                        <form action="./payment.html" method="GET">
-                            <div class="form-group">
-                                <label for="adults">Adults:</label>
-                                <input type="number" class="form-control" id="adults" name="adults" placeholder="1"
-                                    min="1" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input type="text" autocomplete="off" class="form-control" id="name" name="name"
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <label for="fromdate">From Date:</label>
-                                <input type="date" class="form-control" id="fromdate" name="fromdate" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="todate">To Date:</label>
-                                <input type="date" class="form-control" id="todate" name="todate" required>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="total">Total:</label>
-                                <input type="number" disabled class="form-control" id="total" name="total">
-                            </div>
-                            <button type="submit" value="submit" class="btn btn-primary">Book Now</button>
-                        </form>
-
-
-                    </div>
-                    <article>
-                        <div id="description">
-                            <h3>Radisson Blu Hotel</h3>
-                            <p>5 Star</p>
-                            <p>New Delhi</p>
-                            <p>AMENITIES</p>
-                            <ul>
-                                <li>Room service</li>
-                                <li>Restaurat</li>
-                                <li>Business center</li>
-                                <li>Fitness center</li>
-                                <li>Pool</li>
-                            </ul>
-                            <h5>DESCRIPTION</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias at facere velit
-                                dolorum excepturi magni debitis numquam, fuga corporis provident voluptatibus vel porro
-                                blanditiis vitae est ex quibusdam soluta voluptates.</p>
+                    <form action="./payment.html" method="GET">
+                        <div>
+                            <label for="adults">Adults:</label>
+                            <input type="number" class="form-control" id="adults" name="adults" placeholder="1" min="1"
+                                required>
                         </div>
-                    </article>
 
+
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" autocomplete="off" class="form-control" id="name" name="name" required>
+
+                        </div>
+
+                        <div>
+
+                            <label for="fromdate">From Date:</label>
+                            <input type="date" class="form-control" id="fromdate" name="fromdate" required>
+
+
+                        </div>
+
+                        <div>
+                            <label for="todate">To Date:</label>
+                            <input type="date" class="form-control" id="todate" name="todate" required>
+
+                        </div>
+
+                        <div>
+
+                            <label for="total">Total:</label>
+                            <input type="number" disabled class="form-control" id="total" name="total">
+
+                        </div>
+                        <div>
+                            <button type="submit" id="formbutton" value="submit" class="btn btn-primary">Book
+                                Now</button>
+                        </div>
+
+                    </form>
                 </div>
+            </div>
+
+
+            <article>
+                <div id="description">
+                    <h3>Radisson Blu Hotel</h3>
+                    <h5>RATING</h5>
+                    <p>5 Star</p>
+                    <p>New Delhi</p>
+                    <h5>AMENITIES</h5>
+                    <ul>
+                        <li>Room service</li>
+                        <li>Restaurat</li>
+                        <li>Business center</li>
+                        <li>Fitness center</li>
+                        <li>Pool</li>
+                    </ul>
+                    <h5>DESCRIPTION</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias at facere velit
+                        dolorum excepturi magni debitis numquam, fuga corporis provident voluptatibus vel porro
+                        blanditiis vitae est ex quibusdam soluta voluptates.</p>
+                </div>
+            </article>
+
+
         </section>
         <footer>
-           
-                <div id="contact-us-div"><a target="_blank" href="./contact.html">Contact Us</a></div>
-                <div id="footer-logo-div">
-                    <a href=https://www.facebook.com target="_blank"><img src="./assests/images/facebook.png"></a>
-                    <a href=https://www.instagram.com target="_blank"><img src="./assests/images/instagram.png"></a>
-                    <a href=https://www.twitter.com target="_blank"><img src="./assests/images/twitter.png"></a>
-                </div>
-                <div id="footer-div">
-                    <footer>&#169; 2020 ROOM SEARCH PVT.LTD</footer>
-                </div>
-          
+
+            <div id="contact-us-div"><a target="_blank" href="./contact.html">Contact Us</a></div>
+            <div id="footer-logo-div">
+                <a href=https://www.facebook.com target="_blank"><img src="./assests/images/facebook.png"></a>
+                <a href=https://www.instagram.com target="_blank"><img src="./assests/images/instagram.png"></a>
+                <a href=https://www.twitter.com target="_blank"><img src="./assests/images/twitter.png"></a>
+            </div>
+            <div id="footer-div">
+                &#169; 2020 ROOM SEARCH PVT.LTD
+            </div>
+
         </footer>
     </div>
 </body>
