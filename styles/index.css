@@ -12,6 +12,8 @@ body {
 .container {
     margin: 0;
     display: block;
+    padding: 0 !important;
+    
 }
 
 a {
@@ -49,9 +51,12 @@ header {
 .logo {
     margin-left: 1%;
 }
-
-
-
+.modal-backdrop.show {
+    opacity: 0;
+}
+.modal-backdrop {
+    position:static;
+}
 
 
 /*content css */
@@ -60,7 +65,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    width: 100vw;
 }
 
 
@@ -116,7 +121,7 @@ section {
 
 }
 
-p {
+#cityname {
     visibility: hidden;
     position: absolute;
     top: 50%;
@@ -124,7 +129,7 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.imageclass:hover p {
+.imageclass:hover  #cityname {
     visibility: visible;
     color: #f1f1f1;
     background-color: rgba(0, 0, 0, 0.5);
@@ -140,7 +145,7 @@ p {
     background: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
     height: 380px;
     background-size: cover;
-    background-position: center;
+    background-position: center;    
 }
 
 

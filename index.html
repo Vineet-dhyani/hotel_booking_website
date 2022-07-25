@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+
     <title>Index</title>
 </head>
 
@@ -19,7 +21,39 @@
             </div>
 
             <div class="login-link">
-                <a id="login-link" href="./login.html">Login</a>
+                <button type="button" id="login-link" data-toggle="modal" data-target="#exampleModal"
+                    class="btn btn-light btn-sm">
+                    Login</button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="d-flex flex-column ">
+                                    <div class="d-flex flex-row p-3 justify-content-around">
+                                        <label class="w-40" for="username">Enter Username:</label>
+                                        <input class="w-60" type="text" id="username" placeholder="Enter Username" name="username" required>
+                                    </div>
+                                    <div class="d-flex flex-row p-3 justify-content-around">
+                                        <label class="w-40" for="password">Enter Password:</label>
+                                        <input class="w-60" type="password" id="password" name="password"  placeholder="Enter Password" autocomplete="off" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+
+                                <button type="button" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -36,32 +70,66 @@
                 <div class="imageclass">
                     <a href="./list.html"><img
                             src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
-                        <p>Delhi</p>
+                        <p id="cityname">Delhi</p>
                     </a>
 
                 </div>
                 <div class="imageclass">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
-                    <p>Goa</p>
+                    <p id="cityname">Goa</p>
                 </div>
                 <div class="imageclass">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
-                    <p>Hyderabad</p>
+                    <p id="cityname">Hyderabad</p>
                 </div>
                 <div class="imageclass">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
-                    <p>Kolkata</p>
+                    <p id="cityname">Kolkata</p>
                 </div>
 
             </div>
             <div id="content-viewmore-div">
-                <a href="./index.html">View more >></a>
+                <button class="btn btn-large btn-secondary" onclick="window.location.href='./index.html'">View More</button>
             </div>
 
         </section>
         <footer>
 
-            <div id="contact-us-div"><a href="./contact.html">Contact Us</a></div>
+            <div id="contact-us-div">
+                <button type="button"  data-toggle="modal" data-target="#exampleModal1"
+                    class="btn btn-info btn-sm">
+                    Contact US</button>
+
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="d-flex flex-column ">
+                                    <div >
+                                        <p>Thank you for reaching out!!!</p>
+                                        <p>please enter your email and we will get back to you</p>
+                                    </div>
+                                    <div class="d-flex flex-row  justify-content-start">
+                                        <label class="w-40" for="email">Enter Email:</label>
+                                        <input class="w-60" type="email" id="email" name="password"   placeholder="Enter your email id" autocomplete="off" >
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer justify-content-end">
+
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="footer-logo-div">
                 <a href=https://www.facebook.com target="_blank"><img src="./assests/images/facebook.png"></a>
                 <a href=https://www.instagram.com target="_blank"><img src="./assests/images/instagram.png"></a>
@@ -73,6 +141,11 @@
 
         </footer>
     </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

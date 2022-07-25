@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/list.css">
     <title>List</title>
@@ -17,9 +18,42 @@
             <div class="logo">
                 <a href="./index.html"> <img src="./assests/images/logo.png" alt="logo" id="logo"></a>
             </div>
-
             <div class="login-link">
-                <a id="login-link" href="./login.html">Login</a>
+                <button type="button" id="login-link" data-toggle="modal" data-target="#exampleModal"
+                    class="btn btn-light btn-sm">
+                    Login</button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="d-flex flex-column ">
+                                    <div class="d-flex flex-row p-3 justify-content-around">
+                                        <label class="w-40" for="username">Enter Username:</label>
+                                        <input class="w-60" type="text" id="username" placeholder="Enter Username"
+                                            name="username" required>
+                                    </div>
+                                    <div class="d-flex flex-row p-3 justify-content-around">
+                                        <label class="w-40" for="password">Enter Password:</label>
+                                        <input class="w-60" type="password" id="password" name="password"
+                                            placeholder="Enter Password" autocomplete="off" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+
+                                <button type="button" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -28,48 +62,101 @@
         <section>
 
             <div id="nav-links">
-                <ul> <a href="#content-images">
-                        List View
-                    </a></ul>
-                <ul> <a href="#mapview">
-                        Map View
-                    </a></ul>
-            </div>
-            <div id="content-images">
-                <div class="hotel-images"><a href="./detail.html"><img
-                            src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></a>
-                    <a href="./detail.html">
-                        <h3>Radisson Blu Hotel</h3>
-                    </a>
-                    <a href="./detail.html">
-                        <p>5 Star</p>
-                    </a>
-                    <a href="./detail.html">
-                        <p>New Delhi</p>
-                    </a>
-                </div>
-                <div class="hotel-images"><img
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
-                    <h3>The Lalit New Delhi</h3>
-                    <p>4.5 Star</p>
-                    <p>New Delhi</p>
-                </div>
-                <div class="hotel-images"><img
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
-                    <h3>Taj Palace</h3>
-                    <p>5 Star</p>
-                    <p>New Delhi</p>
-                </div>
-                <div id="mapview"><img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
-                    <p>Map View</p>
-                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#content-images" role="tab"
+                            aria-controls="pills-home" aria-selected="true">List View</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#mapview" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">Map View</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="content-images" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
 
+                        <div id="content-images">
+                            <div class="hotel-images"><a href="./detail.html"><img
+                                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></a>
+                                <a href="./detail.html">
+                                    <h3>Radisson Blu Hotel</h3>
+                                </a>
+                                <a href="./detail.html">
+                                    <p>5 Star</p>
+                                </a>
+                                <a href="./detail.html">
+                                    <p>New Delhi</p>
+                                </a>
+                            </div>
+                            <div class="hotel-images"><img
+                                    src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
+                                <h3>The Lalit New Delhi</h3>
+                                <p>4.5 Star</p>
+                                <p>New Delhi</p>
+                            </div>
+                            <div class="hotel-images"><img
+                                    src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
+                                <h3>Taj Palace</h3>
+                                <p>5 Star</p>
+                                <p>New Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="mapview" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                        <div id="mapview"><img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
+                            <p>Map View</p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
             </div>
+
+
 
         </section>
         <footer>
 
-            <div id="contact-us-div"><a target="_blank" href="./contact.html">Contact Us</a></div>
+            <div id="contact-us-div">
+                <button type="button" data-toggle="modal" data-target="#exampleModal1" class="btn btn-info btn-sm">
+                    Contact US</button>
+
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="d-flex flex-column ">
+                                    <div>
+                                        <p>Thank you for reaching out!!!</p>
+                                        <p>please enter your email and we will get back to you</p>
+                                    </div>
+                                    <div class="d-flex flex-row  justify-content-start">
+                                        <label class="w-40" for="email">Enter Email:</label>
+                                        <input class="w-60" type="email" id="email" name="password"
+                                            placeholder="Enter your email id" autocomplete="off">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer justify-content-end">
+
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="footer-logo-div">
                 <a href=https://www.facebook.com target="_blank"><img src="./assests/images/facebook.png"></a>
                 <a href=https://www.instagram.com target="_blank"><img src="./assests/images/instagram.png"></a>
@@ -81,6 +168,11 @@
 
         </footer>
     </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

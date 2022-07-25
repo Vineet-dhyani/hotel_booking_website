@@ -5,12 +5,21 @@
 
 body {
     margin: 0;
+    display: block;
+
 }
 
+.container {
+    margin: 0;
+    display: block;
+    padding: 0 !important;
+    
+}
 
-a {
-    text-decoration: none;
-    color: black;
+a{
+    text-decoration: none !important;
+    color: black !important ;
+    
 }
 
 
@@ -43,7 +52,12 @@ header {
 .logo {
     margin-left: 1%;
 }
-
+.modal-backdrop.show {
+    opacity: 0;
+}
+.modal-backdrop {
+    position:static;
+}
 
 
 /* section css */
@@ -52,7 +66,8 @@ section {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-
+    width: 100vw;
+ 
 }
 h5{
     font-family: cursive;
@@ -133,6 +148,11 @@ h5{
     height: 400px;
 
 
+}
+#formbutton:hover{
+    background-color:#5cb85c;
+    color: white !important;
+      
 }
 
 
