@@ -6,7 +6,7 @@
 body {
     margin: 0;
     display: block;
-
+    background-color:  #e0e0e0;
 }
 
 .container {
@@ -67,6 +67,9 @@ section {
     width: 100vw;
 }
 
+.checked {
+    color: orange;
+  }
 #nav-links {
     margin: 6% 0 1% 0;
 }
@@ -142,3 +145,48 @@ footer {
     color: black;
     order: 2;
 }   
+
+@media screen and (min-device-width: 576px) and (max-device-width: 768px) {
+    #content-images{
+        display: flex;
+    flex-direction: column;
+    }  
+    .hotel-images {
+        width: auto;
+    }
+    #nav-links {
+        margin: 12% 0 1% 0;
+    }
+
+    .login-link {
+        margin-right: 3%;
+    }
+    #mapview img{
+        width: 100%;
+    }
+    .mapview{
+        transform: translate(-1%, -150%);
+    }
+}
+
+@media screen and (max-width: 576px ){
+    #content-images{
+        display: flex;
+    flex-direction: column;
+    }       
+
+    .hotel-images {
+        width: auto;
+    }
+    #nav-links {
+        margin: 17% 0 1% 0;
+    }
+    .mapview img{
+        width: 100%;
+    transform: translate(1%, -260%) ;
+    }
+    #footer-div {
+  padding-top: 2%;
+    }
+
+}

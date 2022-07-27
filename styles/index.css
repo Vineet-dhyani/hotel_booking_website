@@ -6,7 +6,7 @@
 body {
     margin: 0;
     display: block;
-
+    background-color:  #e0e0e0;
 }
 
 .container {
@@ -30,7 +30,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     width: 100vw;
-
+    z-index: 1;
 }
 
 .login-link {
@@ -185,3 +185,90 @@ footer {
     color: black;
     order: 2;
 }
+
+
+    
+
+    
+@media screen and (min-device-width: 576px) and (max-device-width: 768px) {
+        #content-images-div {
+            display: flex;
+          flex-wrap: wrap;
+        justify-content:  space-around;
+
+        }    
+        .imageclass:hover #cityname {
+            width: 250px;
+            height: 250px;
+            padding-top: 42%;
+
+        }
+        #cityname {
+            transform: translate(-52%, -59%);
+        }
+        .imageclass img {
+        height: 250px;
+        width: 250px;
+        }
+        .imageclass{
+            width: 35%;
+            height: 100%;
+            padding-right: 2%;
+            padding-bottom: 6%;
+        }
+        #search-bar-div input {
+            margin-top: 25%;
+            width: 50%;
+          }
+        #content-viewmore-div {
+        padding-bottom: 4%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 576px ){
+    #content-images-div {
+       flex-direction: column;
+    }
+    #search-bar-div input {
+            margin-top: 50%;
+            width: 50%;
+    }       
+    .imageclass {
+        padding: 2%;
+        margin-right: 18%;
+    }       
+    #content-viewmore-div {
+        padding-bottom: 20%;
+        padding-top: 4%;
+    }
+    .imageclass img {
+        border-radius: 25%;
+        margin-left: 25%;
+        box-shadow: 10px 10px 10px grey;
+        width: 150px;
+    height: 150px;
+    }
+    #content-images-div {
+        margin:0;
+    }
+
+
+    #cityname {
+        transform: translate(-50%, -50%);
+
+
+    }
+    .imageclass:hover #cityname{
+        
+        width: 150px;
+        height: 150px;
+        padding-top: 20%;
+    margin-left: 12%;
+    }
+    #footer-div{
+        padding-top: 2%;
+    }
+    }
