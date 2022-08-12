@@ -94,9 +94,8 @@ section {
 
 #content-images-div {
     margin: 4% 0 4% 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 
 }
 
@@ -105,19 +104,21 @@ section {
     height: 150px;
     width: 150px;
     box-shadow: 10px 10px 10px grey;
+    
 
 }
 
 .imageclass {
     position: relative;
     text-align: center;
+    margin: 15%;
 
 }
 
 .imageclass:hover img {
     background: rgba(0, 0, 0, 0.5);
     opacity: 0.8;
-
+    
 
 }
 
@@ -133,9 +134,9 @@ section {
     visibility: visible;
     color: #f1f1f1;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: 63%;
     height: 100%;
-    padding-top: 45%;
+    padding-top: 25%;
     border-radius: 25%;
 
 }
@@ -192,19 +193,19 @@ footer {
     
 @media screen and (min-device-width: 576px) and (max-device-width: 768px) {
         #content-images-div {
-            display: flex;
-          flex-wrap: wrap;
-        justify-content:  space-around;
+            display: grid;
+            grid-template-columns: auto auto;
 
         }    
         .imageclass:hover #cityname {
             width: 250px;
             height: 250px;
-            padding-top: 42%;
+            padding-top:80%;
 
         }
         #cityname {
-            transform: translate(-52%, -59%);
+            transform: translate(-26%, -78%);
+            font-size: 150%;
         }
         .imageclass img {
         height: 250px;
@@ -229,7 +230,9 @@ footer {
 
 
 @media screen and (max-width: 576px ){
+    
     #content-images-div {
+       display: flex;
        flex-direction: column;
     }
     #search-bar-div input {
@@ -246,10 +249,9 @@ footer {
     }
     .imageclass img {
         border-radius: 25%;
-        margin-left: 25%;
-        box-shadow: 10px 10px 10px grey;
+       box-shadow: 10px 10px 10px grey;
         width: 150px;
-    height: 150px;
+         height: 150px;
     }
     #content-images-div {
         margin:0;
@@ -266,7 +268,7 @@ footer {
         width: 150px;
         height: 150px;
         padding-top: 20%;
-    margin-left: 12%;
+
     }
     #footer-div{
         padding-top: 2%;
