@@ -17,3 +17,9 @@ function toggleimages(e){
        }
 
 }
+
+
+
+function find(name){
+    localStorage.setItem("searchvalue",name);
+}
