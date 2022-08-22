@@ -1,4 +1,13 @@
 
+/* #map {
+    width: 90%;
+    height: 70%;
+    background: red;
+    box-sizing: border-box;
+    margin-left: 5%;
+    position: absolute;
+} */
+
 /* section css */
 section {
     margin: 0;
@@ -47,7 +56,6 @@ background-color: rosybrown;
     margin-right: 2%;
 
 }
-
 
 
 

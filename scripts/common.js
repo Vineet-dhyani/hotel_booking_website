@@ -1,8 +1,8 @@
-const header=document.querySelector("header");
-const footer =document.querySelector('footer');
+const header = document.querySelector("header");
+const footer = document.querySelector('footer');
 
 
-header.innerHTML=` <div class="logo">
+header.innerHTML = ` <div class="logo">
 <a href="./index.html"> <img src="./assests/images/logo.png" alt="logo" id="logo"></a>
 </div>
 
@@ -44,7 +44,7 @@ header.innerHTML=` <div class="logo">
 </div>
 `
 
-footer.innerHTML=` <div id="contact-us-div">
+footer.innerHTML = ` <div id="contact-us-div">
 <button type="button"  data-toggle="modal" data-target="#exampleModal1"
     class="btn btn-info btn-sm">
     Contact US</button>
@@ -89,39 +89,35 @@ footer.innerHTML=` <div id="contact-us-div">
 </div>
 `
 
-const loginbtn=document.querySelector("#login-link");
-const username=document.getElementById("username");
-const password=document.getElementById("password");
-const closeModal=document.querySelector("#exampleModal");
-const loginform=document.querySelector(".loginform");
-const logoutbtn=document.querySelector("#logout-link");
+const loginbtn = document.querySelector("#login-link");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const closeModal = document.querySelector("#exampleModal");
+const loginform = document.querySelector(".loginform");
+const logoutbtn = document.querySelector("#logout-link");
 
 
-function LoginLogout(){
-    if(username.value!==""&&password.value!==""){
-            localStorage.setItem("username",username.value);
-            localStorage.setItem("password",password.value)
-            alert("Successfully loggedin");
-            closeModal.classList.remove("show");
-            loginform.reset();
-            logoutbtn.classList.remove("d-none");
-            loginbtn.classList.add('d-none');
+function LoginLogout() {
+    if (username.value !== "" && password.value !== "") {
+        localStorage.setItem("username", username.value);
+        localStorage.setItem("password", password.value)
+        alert("Successfully loggedin");
+        closeModal.classList.remove("show");
+        loginform.reset();
+        logoutbtn.classList.remove("d-none");
+        loginbtn.classList.add('d-none');
     }
-    }
-        logoutbtn.addEventListener('click',()=>{
-        localStorage.removeItem("username");
-        localStorage.removeItem("password");
-        loginbtn.classList.remove('d-none');
-        logoutbtn.classList.add('d-none');
+}
+logoutbtn.addEventListener('click', () => {
+    localStorage.removeItem("username");
+    localStorage.removeItem("password");
+    loginbtn.classList.remove('d-none');
+    logoutbtn.classList.add('d-none');
 
 })
-   
-// AIzaSyATZAggvDokA-WV7MX1tCnjMXlMtLwUL-U
 
 
-    
-      
-         
-       
-    
-  
+
+
+
+/////////////////////////////////////////////
